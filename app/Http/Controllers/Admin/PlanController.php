@@ -23,4 +23,13 @@ class PlanController extends Controller
             'plans' => $plans,
         ]);
     }
+
+    public function create(){
+        return view('admin.pages.plans.create');
+    }
+
+    public function store(Request $request){
+        
+        dd($request->all);
+    }
 }
