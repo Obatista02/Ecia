@@ -14,15 +14,15 @@
 
                 <div class="form-gourp">
                     <label>Nome:</label>
-                    <imput type="text" name="name" class="form-control" placeholder="Nome:">
+                    <input type="text" name="name" class="form-control" placeholder="Nome:">
                 </div>
                 <div class="form-gourp">
                     <label>Preço:</label>
-                    <imput type="text" name="price" class="form-control" placeholder="Preço:">
+                    <input type="text" name="price" class="form-control" placeholder="Preço:">
                 </div>
                 <div class="form-gourp">
                     <label>Descrição:</label>
-                    <imput type="text" name="description" class="form-control" placeholder="Descrição:">
+                    <input type="text" name="description" class="form-control" placeholder="Descrição:">
                 </div>
                 <div class="form-gourp">
                     <button type="submit" class="btn btn-dark">Enviar</button>
