@@ -3,19 +3,17 @@
  use Illuminate\Support\Facades\Route;
  use App\Http\Controllers\Admin\PlanController;
  use App\Http\Controllers\Admin\DetailPlanController;
+ use App\Http\Controllers\Admin\ACL\ProfileController;
+
+ 
+/*
+*Route Profiles
+*/
+Route::resource('profiles', ProfileController::class );
 
  Route::prefix('admin')
  ->namespace('Admin')
  ->group(function() {
-
-
-
-/**
- * 
- * Routes Profiles
- * 
- */
-Route::resource('profiles',ACL\ProfileController);
 /**
 * Routes Details Plans
 */
@@ -56,6 +54,5 @@ Route::get('plans', [PlanController::class, 'index'])->name('plans.index');
 */
 Route::get('/', [PlanController::class, 'index'])->name('admin.index');
 });
- 
 
 ?>

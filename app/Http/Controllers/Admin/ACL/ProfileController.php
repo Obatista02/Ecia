@@ -3,17 +3,21 @@
 namespace App\Http\Controllers\Admin\ACL;
 
 use App\Http\Controllers\Controller;
-use App\Models\Profile;
 use Illuminate\Http\Request;
+use App\Models\Models\Profile;
 
 class ProfileController extends Controller
 {
-    protected $repository;
+
+    //protected $repository;
 
     public function __construct(Profile $profile)
+    //public function __construct()
     {
-        $this->repository = $profile;
+       $this->repository = $profile;
     }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -21,9 +25,9 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $profile = $this->repository->paginate();
-
+        $profiles = $this->repository->paginate();
         return view('admin.pages.profiles.index', compact('profiles'));
+        //return view('admin.pages.profiles.index');
     }
 
     /**

@@ -230,9 +230,8 @@ return [
             'url'  => 'admin/plans',
         ],
         [
-            'text' => 'Perfis',
+            'text' => 'Perfil',
             'url'  => 'admin/profiles',
-            'icon' => 'fa-solid fa-address-card'
         ],
     ],
 
