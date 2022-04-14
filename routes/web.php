@@ -14,6 +14,7 @@ Route::resource('profiles', ProfileController::class );
  Route::prefix('admin')
  ->namespace('Admin')
  ->group(function() {
+     
 /**
 * Routes Details Plans
 */
